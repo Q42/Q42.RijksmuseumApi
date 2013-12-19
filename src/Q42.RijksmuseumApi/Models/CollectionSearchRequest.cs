@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Q42.RijksmuseumApi.Models
 {
+  /// <summary>
+  /// Used to search the collection
+  /// </summary>
   public class CollectionSearchRequest
   {
     /// <summary>
@@ -54,7 +57,10 @@ namespace Q42.RijksmuseumApi.Models
     /// </summary>
     public bool? TopPiecesOnly { get; set; } //toppieces
 
-
+    /// <summary>
+    /// Generates querystring
+    /// </summary>
+    /// <returns></returns>
     public override string ToString()
     {
       StringBuilder sb = new StringBuilder();

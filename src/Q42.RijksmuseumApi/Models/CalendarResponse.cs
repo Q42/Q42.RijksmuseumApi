@@ -73,6 +73,9 @@ namespace Q42.RijksmuseumApi.Models
     public ExpositionType ExpositionType { get; set; }
   }
 
+  /// <summary>
+  /// Response from GetCalendar
+  /// </summary>
   public class CalendarResponse
   {
     public int ElapsedMilliseconds { get; set; }

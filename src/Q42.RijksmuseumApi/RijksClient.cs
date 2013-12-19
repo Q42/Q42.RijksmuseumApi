@@ -133,6 +133,8 @@ namespace Q42.RijksmuseumApi
       return result;
     }
 
+    /*
+     * Not available yet
     /// <summary>
     /// https://www.rijksmuseum.nl/api/usersets?key=fakekey&format=json&page=2
     /// </summary>
@@ -179,6 +181,7 @@ namespace Q42.RijksmuseumApi
 
       return result;
     }
+     * */
 
     /// <summary>
     /// https://www.rijksmuseum.nl/api/nl/agenda/2013-10-18?key=fakekey&format=json

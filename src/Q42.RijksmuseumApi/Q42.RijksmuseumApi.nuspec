@@ -2,7 +2,7 @@
 <package>
   <metadata>
     <id>Q42.RijksmuseumApi</id>
-    <version>0.1.0.42</version>
+    <version>0.1.1.42</version>
     <summary>Open source library for interaction with the Rijksmuseum API.</summary>
     <description><![CDATA[Open source library for interaction with the Rijksmuseum API. Search the Rijksmuseum and download Art Objects. Portable library works with .Net45, Windows 8 and Windows Phone 8]]></description>
     <authors>Q42</authors>

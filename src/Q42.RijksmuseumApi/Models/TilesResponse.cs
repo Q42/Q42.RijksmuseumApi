@@ -6,13 +6,24 @@ using System.Threading.Tasks;
 
 namespace Q42.RijksmuseumApi.Models
 {
+  /// <summary>
+  /// Single tile
+  /// </summary>
   public class Tile
   {
+    /// <summary>X Position</summary>
     public int X { get; set; }
+    
+    /// <summary>Y Position</summary>
     public int Y { get; set; }
-    public string Url { get; set; }
+    
+    /// <summary>Image url</summary>
+    public Uri Url { get; set; }
   }
 
+  /// <summary>
+  /// The Zoom Level
+  /// </summary>
   public class Level
   {
     public string Name { get; set; }
@@ -21,8 +32,14 @@ namespace Q42.RijksmuseumApi.Models
     public List<Tile> Tiles { get; set; }
   }
 
+  /// <summary>
+  /// Result from GetCollectionImages
+  /// </summary>
   public class TilesResponse
   {
+    /// <summary>
+    /// Multiple zoom levels available
+    /// </summary>
     public List<Level> Levels { get; set; }
   }
 }

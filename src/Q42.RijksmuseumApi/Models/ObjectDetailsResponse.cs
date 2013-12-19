@@ -65,7 +65,7 @@ namespace Q42.RijksmuseumApi.Models
   {
     public string Unit { get; set; }
     public string Type { get; set; }
-    public object Part { get; set; }
+    public string Part { get; set; }
     public string Value { get; set; }
   }
 
@@ -73,8 +73,8 @@ namespace Q42.RijksmuseumApi.Models
   {
     public string Title { get; set; }
     public string MakerLine { get; set; }
-    public object Description { get; set; }
-    public object Notes { get; set; }
+    public string Description { get; set; }
+    public string Notes { get; set; }
     public string Date { get; set; }
   }
 
@@ -100,9 +100,9 @@ namespace Q42.RijksmuseumApi.Models
     public List<Maker> Makers { get; set; }
     public List<Maker> PrincipalMakers { get; set; }
     public string PlaqueDescriptionDutch { get; set; }
-    public object PlaqueDescriptionEnglish { get; set; }
+    public string PlaqueDescriptionEnglish { get; set; }
     public string PrincipalMaker { get; set; }
-    public object ArtistRole { get; set; }
+    public string ArtistRole { get; set; }
     public List<object> Associations { get; set; }
     public Acquisition Acquisition { get; set; }
     public List<object> Exhibitions { get; set; }
@@ -141,7 +141,7 @@ namespace Q42.RijksmuseumApi.Models
     public string Lang { get; set; }
     public string ObjectNumber { get; set; }
     public List<object> Tags { get; set; }
-    public object PlaqueDescription { get; set; }
+    public string PlaqueDescription { get; set; }
     public object AudioFile1 { get; set; }
     public object AudioFileLabel1 { get; set; }
     public object AudioFileLabel2 { get; set; }
@@ -150,6 +150,9 @@ namespace Q42.RijksmuseumApi.Models
     public AdlibOverrides AdlibOverrides { get; set; }
   }
 
+  /// <summary>
+  /// Result GetCollectionDetails
+  /// </summary>
   public class ObjectDetailsResponse
   {
     public int ElapsedMilliseconds { get; set; }

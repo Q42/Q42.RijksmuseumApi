@@ -22,6 +22,9 @@ namespace Q42.RijksmuseumApi.Models
     public string Url { get; set; }
   }
 
+  /// <summary>
+  /// Single Art Object
+  /// </summary>
   public class ArtObject
   {
     public Links Links { get; set; }
@@ -38,10 +41,18 @@ namespace Q42.RijksmuseumApi.Models
     public List<object> ProductionPlaces { get; set; }
   }
 
+  /// <summary>
+  /// Response from GetCollection
+  /// </summary>
   public class CollectionSearchResponse
   {
     public int ElapsedMilliseconds { get; set; }
+
+    /// <summary>
+    /// Total results found
+    /// </summary>
     public int Count { get; set; }
+
     public List<ArtObject> ArtObjects { get; set; }
   }
  

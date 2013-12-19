@@ -14,26 +14,26 @@ namespace Q42.RijksmuseumApi.Models
 
   public class ArtobjectLinks
   {
-    public string artobject { get; set; }
-    public string web { get; set; }
+    public string Artobject { get; set; }
+    public string Web { get; set; }
   }
 
   public class Image
   {
-    public Guid guid { get; set; }
-    public string parentObjectNumber { get; set; }
-    public string cdnUrl { get; set; }
-    public int cropX { get; set; }
-    public int cropY { get; set; }
-    public int width { get; set; }
-    public int height { get; set; }
-    public int offsetPercentageX { get; set; }
-    public int offsetPercentageY { get; set; }
+    public Guid Guid { get; set; }
+    public string ParentObjectNumber { get; set; }
+    public string CdnUrl { get; set; }
+    public int CropX { get; set; }
+    public int CropY { get; set; }
+    public int Width { get; set; }
+    public int Height { get; set; }
+    public int OffsetPercentageX { get; set; }
+    public int OffsetPercentageY { get; set; }
   }
 
   public class SetItem
   {
-    public ArtobjectLinks links { get; set; }
+    public ArtobjectLinks Links { get; set; }
     public Guid Id { get; set; }
     public string ObjectNumber { get; set; }
     public string Relation { get; set; }
@@ -63,6 +63,9 @@ namespace Q42.RijksmuseumApi.Models
     public DateTime UpdatedOn { get; set; }
   }
 
+  /// <summary>
+  /// Result from GetUserSetDetails
+  /// </summary>
   public class UserSetDetailsResponse
   {
     public int ElapsedMilliseconds { get; set; }

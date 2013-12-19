@@ -56,21 +56,21 @@ namespace Q42.RijksmuseumApi.Tests
       Assert.IsNotNull(result);
     }
 
-    [TestMethod]
-    public async Task GetUserSetsTest()
-    {
-      var result = await _client.GetUserSets();
+    //[TestMethod]
+    //public async Task GetUserSetsTest()
+    //{
+    //  var result = await _client.GetUserSets();
 
-      Assert.IsNotNull(result);
-    }
+    //  Assert.IsNotNull(result);
+    //}
 
-    [TestMethod]
-    public async Task GetUserSetDetailsTest()
-    {
-      var result = await _client.GetUserSetDetails(1);
+    //[TestMethod]
+    //public async Task GetUserSetDetailsTest()
+    //{
+    //  var result = await _client.GetUserSetDetails(1);
 
-      Assert.IsNotNull(result);
-    }
+    //  Assert.IsNotNull(result);
+    //}
 
     [TestMethod]
     public async Task GetCalendarTest()

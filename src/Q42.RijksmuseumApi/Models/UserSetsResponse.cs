@@ -31,8 +31,14 @@ namespace Q42.RijksmuseumApi.Models
     public DateTime UpdatedOn { get; set; }
   }
 
+  /// <summary>
+  /// Result from GetUserSets
+  /// </summary>
   public class UserSetsResponse
   {
+    /// <summary>
+    /// Total number of results
+    /// </summary>
     public int Count { get; set; }
     public int ElapsedMilliseconds { get; set; }
     public List<UserSet> UserSets { get; set; }

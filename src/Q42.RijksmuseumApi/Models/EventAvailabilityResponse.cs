@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Q42.RijksmuseumApi.Models
 {
+  /// <summary>
+  /// Result from GetEventAvailability
+  /// </summary>
   public class EventAvailabilityResponse
   {
     public int ElapsedMilliseconds { get; set; }
