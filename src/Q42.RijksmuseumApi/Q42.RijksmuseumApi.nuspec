@@ -11,10 +11,8 @@
     <projectUrl>https://github.com/Q42/Q42.RijksmuseumApi</projectUrl>
     <iconUrl>http://a0.twimg.com/profile_images/2142700938/q42-logo-big-square.png</iconUrl>
     <dependencies>
-	  <group targetFramework="portable-net45+wp80+win81+MonoAndroid+MonoTouch">
-	    	<dependency id="Newtonsoft.Json" />
-		<dependency id="Microsoft.Net.Http" version="2.1.18" />
-	  </group>          
+	<dependency id="Newtonsoft.Json" />
+	<dependency id="Microsoft.Net.Http" version="2.1.18" />        
     </dependencies>  
   </metadata>
   <files>
