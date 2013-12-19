@@ -94,5 +94,13 @@ namespace Q42.RijksmuseumApi.Tests
 
       Assert.IsNotNull(result);
     }
+
+    [TestMethod]
+    public async Task GetObjectOfTheDayTest()
+    {
+      var result = await _client.GetObjectOfTheDay();
+
+      Assert.IsNotNull(result);
+    }
   }
 }

@@ -8,6 +8,7 @@ using System.Linq;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace Q42.RijksmuseumApi
 {
@@ -225,6 +226,30 @@ namespace Q42.RijksmuseumApi
       var result = JsonConvert.DeserializeObject<EventAvailabilityResponse>(stringResult);
 
       return result;
+    }
+
+    /// <summary>
+    /// http://api.rijksmuseum.nl/data/widget3.jsp?lang=en
+    /// http://api.rijksmuseum.nl/data/widget2.jsp?lang=en
+    /// </summary>
+    /// <returns></returns>
+    public async Task<string> GetObjectOfTheDay()
+    {
+
+      //Create URL
+      Uri uri = new Uri(string.Format("http://api.rijksmuseum.nl/data/widget3.jsp?lang={0}", _language));
+
+      //Do HTTP Request
+      HttpClient client = new HttpClient();
+      string stringResult = await client.GetStringAsync(uri).ConfigureAwait(false);
+
+      //Parse XML
+      XElement xmlElement = XElement.Parse(stringResult);
+
+
+      string artObjectId = xmlElement.Element("artobject").Attribute("id").Value;
+
+      return artObjectId;
     }
 
   }
