@@ -232,12 +232,16 @@ namespace Q42.RijksmuseumApi
     /// http://api.rijksmuseum.nl/data/widget3.jsp?lang=en
     /// http://api.rijksmuseum.nl/data/widget2.jsp?lang=en
     /// </summary>
+    /// <param name="alternative">alternative feed</param>
     /// <returns></returns>
-    public async Task<string> GetObjectOfTheDay()
+    public async Task<string> GetObjectOfTheDay(bool alternative = false)
     {
+      string feedId = "2";
+      if (alternative)
+        feedId = "3";
 
       //Create URL
-      Uri uri = new Uri(string.Format("http://api.rijksmuseum.nl/data/widget3.jsp?lang={0}", _language));
+      Uri uri = new Uri(string.Format("http://api.rijksmuseum.nl/data/widget{0}.jsp?lang={1}", feedId, _language));
 
       //Do HTTP Request
       HttpClient client = new HttpClient();
@@ -245,7 +249,6 @@ namespace Q42.RijksmuseumApi
 
       //Parse XML
       XElement xmlElement = XElement.Parse(stringResult);
-
 
       string artObjectId = xmlElement.Element("artobject").Attribute("id").Value;
 
