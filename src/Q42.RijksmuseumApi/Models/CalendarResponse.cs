@@ -6,12 +6,7 @@ using System.Threading.Tasks;
 
 namespace Q42.RijksmuseumApi.Models
 {
-  public class AvailabilityLinks
-  {
-    public string Availability { get; set; }
-    public string Web { get; set; }
-  }
-
+  
   public class Period
   {
     public Guid Id { get; set; }
@@ -62,7 +57,7 @@ namespace Q42.RijksmuseumApi.Models
 
   public class Option
   {
-    public AvailabilityLinks Links { get; set; }
+    public Dictionary<string, Uri> Links { get; set; }
     public string Id { get; set; }
     public string Lang { get; set; }
     public string Date { get; set; }

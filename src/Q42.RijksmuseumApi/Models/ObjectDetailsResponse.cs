@@ -80,7 +80,7 @@ namespace Q42.RijksmuseumApi.Models
 
   public class ArtObjectDetails
   {
-    public Links Links { get; set; }
+    public Dictionary<string, Uri> Links { get; set; }
     public string Id { get; set; }
     public string Priref { get; set; }
     public string ObjectNumber { get; set; }

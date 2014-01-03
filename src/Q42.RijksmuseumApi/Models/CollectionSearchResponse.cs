@@ -6,11 +6,7 @@ using System.Threading.Tasks;
 
 namespace Q42.RijksmuseumApi.Models
 {
-  public class Links
-  {
-    public Uri Self { get; set; }
-    public Uri Web { get; set; }
-  }
+
 
   public class RijksImage
   {
@@ -27,7 +23,7 @@ namespace Q42.RijksmuseumApi.Models
   /// </summary>
   public class ArtObject
   {
-    public Links Links { get; set; }
+    public Dictionary<string, Uri> Links { get; set; }
     public string Id { get; set; }
     public string ObjectNumber { get; set; }
     public string Title { get; set; }

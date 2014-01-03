@@ -19,7 +19,7 @@ namespace Q42.RijksmuseumApi.Models
 
   public class UserSet
   {
-    public Links Links { get; set; }
+    public Dictionary<string, Uri> Links { get; set; }
     public string Id { get; set; }
     public int Count { get; set; }
     public string Type { get; set; }

@@ -6,17 +6,6 @@ using System.Threading.Tasks;
 
 namespace Q42.RijksmuseumApi.Models
 {
-  public class OverviewLinks
-  {
-    public string Overview { get; set; }
-    public string Web { get; set; }
-  }
-
-  public class ArtobjectLinks
-  {
-    public string Artobject { get; set; }
-    public string Web { get; set; }
-  }
 
   public class Image
   {
@@ -33,7 +22,7 @@ namespace Q42.RijksmuseumApi.Models
 
   public class SetItem
   {
-    public ArtobjectLinks Links { get; set; }
+    public Dictionary<string, Uri> Links { get; set; }
     public Guid Id { get; set; }
     public string ObjectNumber { get; set; }
     public string Relation { get; set; }
@@ -50,7 +39,7 @@ namespace Q42.RijksmuseumApi.Models
 
   public class UserSetDetail
   {
-    public OverviewLinks Links { get; set; }
+    public Dictionary<string, Uri> Links { get; set; }
     public string Id { get; set; }
     public int Count { get; set; }
     public string Type { get; set; }
