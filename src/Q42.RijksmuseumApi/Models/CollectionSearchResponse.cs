@@ -8,8 +8,8 @@ namespace Q42.RijksmuseumApi.Models
 {
   public class Links
   {
-    public string Self { get; set; }
-    public string Web { get; set; }
+    public Uri Self { get; set; }
+    public Uri Web { get; set; }
   }
 
   public class RijksImage
