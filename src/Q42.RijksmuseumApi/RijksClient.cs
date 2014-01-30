@@ -133,21 +133,17 @@ namespace Q42.RijksmuseumApi
 
       return result;
     }
-
-    /*
-     * Not available yet
+    
     /// <summary>
-    /// https://www.rijksmuseum.nl/api/usersets?key=fakekey&format=json&page=2
+    /// https://www.rijksmuseum.nl/api/nl/usersets?key=fakekey&format=json&page=2
     /// </summary>
     /// <param name="page"></param>
     /// <param name="pageSize"></param>
     /// <returns></returns>
     public async Task<UserSetsResponse> GetUserSets(int page = 0, int pageSize = 10)
     {
-      //Doet het niet?
-
       //Create URL
-      Uri uri = new Uri(string.Format("{0}usersets?page={1}&pageSize={2}&{3}", _apiBase, page, pageSize, _queryStringApiKeyFormat));
+      Uri uri = new Uri(string.Format("{0}{1}/usersets?page={2}&pageSize={3}&{4}", _apiBase, _language, page, pageSize, _queryStringApiKeyFormat));
 
       //Do HTTP Request
       HttpClient client = new HttpClient();
@@ -160,18 +156,17 @@ namespace Q42.RijksmuseumApi
     }
 
     /// <summary>
-    /// https://www.rijksmuseum.nl/api/usersets/123-setname-3?key=fakekey&format=json
+    /// https://www.rijksmuseum.nl/api/nl/usersets/123-setname-3?key=fakekey&format=json
     /// </summary>
     /// <param name="id"></param>
     /// <returns></returns>
-    public async Task<UserSetDetailsResponse> GetUserSetDetails(int id)
+    public async Task<UserSetDetailsResponse> GetUserSetDetails(string id)
     {
-      if (id <= 0)
+      if (string.IsNullOrEmpty(id))
         throw new ArgumentOutOfRangeException("id");
-      //Doet het niet?
       
       //Create URL
-      Uri uri = new Uri(string.Format("{0}usersets/{1}&{2}", _apiBase, id, _queryStringApiKeyFormat));
+      Uri uri = new Uri(string.Format("{0}{1}/usersets/{2}?{3}", _apiBase, _language, id, _queryStringApiKeyFormat));
 
       //Do HTTP Request
       HttpClient client = new HttpClient();
@@ -182,7 +177,6 @@ namespace Q42.RijksmuseumApi
 
       return result;
     }
-     * */
 
     /// <summary>
     /// https://www.rijksmuseum.nl/api/nl/agenda/2013-10-18?key=fakekey&format=json

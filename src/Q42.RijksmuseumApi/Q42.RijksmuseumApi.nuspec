@@ -2,7 +2,7 @@
 <package>
   <metadata>
     <id>Q42.RijksmuseumApi</id>
-    <version>0.1.3.42</version>
+    <version>0.1.4.42</version>
     <summary>Open source library for interaction with the Rijksmuseum API.</summary>
     <description><![CDATA[Open source library for interaction with the Rijksmuseum API. Search the Rijksmuseum and download Art Objects. Portable library works with .Net45, Windows 8 and Windows Phone 8]]></description>
     <authors>Q42</authors>
@@ -16,8 +16,8 @@
     </dependencies>  
   </metadata>
   <files>
-		<file src="..\Q42.RijksmuseumApi\bin\Release\Q42.RijksmuseumApi.dll" target="lib\portable-net45+wp80+win81+MonoAndroid+MonoTouch" />
-		<file src="..\Q42.RijksmuseumApi\bin\Release\Q42.RijksmuseumApi.XML" target="lib\portable-net45+wp80+win81+MonoAndroid+MonoTouch" />
+		<file src="..\Q42.RijksmuseumApi\bin\Release\Q42.RijksmuseumApi.dll" target="lib\portable-net45+wp80+win81" />
+		<file src="..\Q42.RijksmuseumApi\bin\Release\Q42.RijksmuseumApi.XML" target="lib\portable-net45+wp80+win81" />
   </files>
 </package>
 

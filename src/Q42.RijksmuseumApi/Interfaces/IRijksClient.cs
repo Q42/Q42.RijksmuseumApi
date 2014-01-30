@@ -49,14 +49,14 @@ namespace Q42.RijksmuseumApi.Interfaces
     /// <param name="page"></param>
     /// <param name="pageSize"></param>
     /// <returns></returns>
-    //Task<UserSetsResponse> GetUserSets(int page = 0, int pageSize = 10);
+    Task<UserSetsResponse> GetUserSets(int page = 0, int pageSize = 10);
 
     /// <summary>
     /// gives more details of a set. You can find the id in the GetUserSets result
     /// </summary>
     /// <param name="id"></param>
     /// <returns></returns>
-    //Task<UserSetDetailsResponse> GetUserSetDetails(int id);
+    Task<UserSetDetailsResponse> GetUserSetDetails(string id);
 
     /// <summary>
     /// shows all events for the given date
