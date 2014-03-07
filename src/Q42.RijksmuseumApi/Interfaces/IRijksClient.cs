@@ -74,11 +74,5 @@ namespace Q42.RijksmuseumApi.Interfaces
     /// <returns></returns>
     Task<EventAvailabilityResponse> GetEventAvailability(DateTime date, Guid expositionId, Guid periodId);
 
-    /// <summary>
-    /// Get object of the day
-    /// </summary>
-    /// <param name="alternative">alternative feed</param>
-    /// <returns>ArtObject ID</returns>
-    Task<string> GetObjectOfTheDay(bool alternative = false);
   }
 }

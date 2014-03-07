@@ -2,17 +2,17 @@
 <package>
   <metadata>
     <id>Q42.RijksmuseumApi</id>
-    <version>0.1.4.42</version>
+    <version>0.2.0.42</version>
     <summary>Open source library for interaction with the Rijksmuseum API.</summary>
     <description><![CDATA[Open source library for interaction with the Rijksmuseum API. Search the Rijksmuseum and download Art Objects. Portable library works with .Net45, Windows 8 and Windows Phone 8]]></description>
     <authors>Q42</authors>
     <tags>rijksmuseum rijksstudio rijks museum amsterdam collectie oai kunst art painting</tags>
     <language>en-US</language> 
     <projectUrl>https://github.com/Q42/Q42.RijksmuseumApi</projectUrl>
-    <iconUrl>http://a0.twimg.com/profile_images/2142700938/q42-logo-big-square.png</iconUrl>
+    <iconUrl>https://nugetgallery.blob.core.windows.net/icons/DotLessMinification.0.42.1.png</iconUrl>
     <dependencies>
 	<dependency id="Newtonsoft.Json" />
-	<dependency id="Microsoft.Net.Http" version="2.1.18" />        
+	<dependency id="Microsoft.Net.Http" version="2.2.18" />        
     </dependencies>  
   </metadata>
   <files>
