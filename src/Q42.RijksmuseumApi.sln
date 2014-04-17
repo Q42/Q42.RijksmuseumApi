@@ -1,13 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.21126.0
+VisualStudioVersion = 12.0.30324.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Q42.RijksmuseumApi", "Q42.RijksmuseumApi\Q42.RijksmuseumApi.csproj", "{C6AAF468-F85B-4B06-BD95-5EA76F9FAC14}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Q42.RijksmuseumApi.Tests", "Q42.RijksmuseumApi.Tests\Q42.RijksmuseumApi.Tests.csproj", "{1A82D260-0486-4C3B-B095-5D54E7868723}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{29560743-3814-4DA7-A4FB-D4B7B94896FA}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{DF49C8EE-084E-4249-A521-5F9DEB7C1F2D}"
 	ProjectSection(SolutionItems) = preProject
 		.nuget\NuGet.Config = .nuget\NuGet.Config
 		.nuget\NuGet.exe = .nuget\NuGet.exe
