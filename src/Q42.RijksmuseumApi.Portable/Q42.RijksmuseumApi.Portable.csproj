@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <MinimumVisualStudioVersion>14.0</MinimumVisualStudioVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C12E19C9-A48B-4E1B-8463-7F80D779E73C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Q42.RijksmuseumApi.Portable</RootNamespace>
+    <AssemblyName>Q42.RijksmuseumApi.Portable</AssemblyName>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <TargetFrameworkVersion>v5.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="project.json" />
+    <!-- A reference to the entire .NET Framework is automatically included -->
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\Q42.RijksmuseumApi\Interfaces\IRijksClient.cs">
+      <Link>Interfaces\IRijksClient.cs</Link>
+    </Compile>
+    <Compile Include="..\Q42.RijksmuseumApi\Models\CalendarResponse.cs">
+      <Link>Models\CalendarResponse.cs</Link>
+    </Compile>
+    <Compile Include="..\Q42.RijksmuseumApi\Models\CollectionSearchRequest.cs">
+      <Link>Models\CollectionSearchRequest.cs</Link>
+    </Compile>
+    <Compile Include="..\Q42.RijksmuseumApi\Models\CollectionSearchResponse.cs">
+      <Link>Models\CollectionSearchResponse.cs</Link>
+    </Compile>
+    <Compile Include="..\Q42.RijksmuseumApi\Models\ContentPageResponse.cs">
+      <Link>Models\ContentPageResponse.cs</Link>
+    </Compile>
+    <Compile Include="..\Q42.RijksmuseumApi\Models\EventAvailabilityResponse.cs">
+      <Link>Models\EventAvailabilityResponse.cs</Link>
+    </Compile>
+    <Compile Include="..\Q42.RijksmuseumApi\Models\ObjectDetailsResponse.cs">
+      <Link>Models\ObjectDetailsResponse.cs</Link>
+    </Compile>
+    <Compile Include="..\Q42.RijksmuseumApi\Models\TilesResponse.cs">
+      <Link>Models\TilesResponse.cs</Link>
+    </Compile>
+    <Compile Include="..\Q42.RijksmuseumApi\Models\UserSetDetailsResponse.cs">
+      <Link>Models\UserSetDetailsResponse.cs</Link>
+    </Compile>
+    <Compile Include="..\Q42.RijksmuseumApi\Models\UserSetsResponse.cs">
+      <Link>Models\UserSetsResponse.cs</Link>
+    </Compile>
+    <Compile Include="..\Q42.RijksmuseumApi\RijksClient.cs">
+      <Link>RijksClient.cs</Link>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

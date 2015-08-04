@@ -34,7 +34,7 @@ namespace Q42.RijksmuseumApi
     public RijksClient(string apiKey, string language = "en")
     {
       if (string.IsNullOrEmpty(apiKey))
-        throw new ArgumentNullException("apiKey");
+        throw new ArgumentNullException(nameof(apiKey));
 
       _apiKey = apiKey;
       _language = language;
@@ -50,7 +50,7 @@ namespace Q42.RijksmuseumApi
     public async Task<CollectionSearchResponse> GetCollection(CollectionSearchRequest search, string sort = "relevance", int page = 0, int pageSize = 10)
     {
       if (search == null)
-        throw new ArgumentNullException("search");
+        throw new ArgumentNullException(nameof(search));
 
       //Create URL
       Uri uri = new Uri(string.Format("{0}{1}/collection?s={2}&p={3}&ps={4}&{5}&{6}", _apiBase, _language, sort, page, pageSize, _queryStringApiKeyFormat, search.ToString()));
@@ -73,7 +73,7 @@ namespace Q42.RijksmuseumApi
     public async Task<ObjectDetailsResponse> GetCollectionDetails(string objectNumber)
     {
       if (string.IsNullOrEmpty(objectNumber))
-        throw new ArgumentNullException("objectNumber");
+        throw new ArgumentNullException(nameof(objectNumber));
 
       //Create URL
       Uri uri = new Uri(string.Format("{0}{1}/collection/{2}?{3}", _apiBase, _language, objectNumber, _queryStringApiKeyFormat));
@@ -96,7 +96,7 @@ namespace Q42.RijksmuseumApi
     public async Task<TilesResponse> GetCollectionImages(string objectNumber)
     {
       if (string.IsNullOrEmpty(objectNumber))
-        throw new ArgumentNullException("objectNumber");
+        throw new ArgumentNullException(nameof(objectNumber));
 
       //Create URL
       Uri uri = new Uri(string.Format("{0}{1}/collection/{2}/tiles?{3}", _apiBase, _language, objectNumber, _queryStringApiKeyFormat));
@@ -119,7 +119,7 @@ namespace Q42.RijksmuseumApi
     public async Task<ContentPageResponse> GetContentPage(string slug)
     {
       if (string.IsNullOrEmpty(slug))
-        throw new ArgumentNullException("slug");
+        throw new ArgumentNullException(nameof(slug));
 
       //Create URL
       Uri uri = new Uri(string.Format("{0}pages/{1}/{2}?{3}", _apiBase, _language, slug, _queryStringApiKeyFormat));
@@ -163,7 +163,7 @@ namespace Q42.RijksmuseumApi
     public async Task<UserSetDetailsResponse> GetUserSetDetails(string id)
     {
       if (string.IsNullOrEmpty(id))
-        throw new ArgumentOutOfRangeException("id");
+        throw new ArgumentOutOfRangeException(nameof(id));
       
       //Create URL
       Uri uri = new Uri(string.Format("{0}{1}/usersets/{2}?{3}", _apiBase, _language, id, _queryStringApiKeyFormat));
