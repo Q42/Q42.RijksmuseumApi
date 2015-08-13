@@ -7,13 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Q42.RijksmuseumApi", "Q42.R
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Q42.RijksmuseumApi.Tests", "Q42.RijksmuseumApi.Tests\Q42.RijksmuseumApi.Tests.csproj", "{1A82D260-0486-4C3B-B095-5D54E7868723}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{DF49C8EE-084E-4249-A521-5F9DEB7C1F2D}"
-	ProjectSection(SolutionItems) = preProject
-		.nuget\NuGet.Config = .nuget\NuGet.Config
-		.nuget\NuGet.exe = .nuget\NuGet.exe
-		.nuget\NuGet.targets = .nuget\NuGet.targets
-	EndProjectSection
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Q42.RijksmuseumApi.Portable", "Q42.RijksmuseumApi.Portable\Q42.RijksmuseumApi.Portable.csproj", "{C12E19C9-A48B-4E1B-8463-7F80D779E73C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Q42.RijksmuseumApi.Portable.Tests", "Q42.RijksmuseumApi.Portable.Tests\Q42.RijksmuseumApi.Portable.Tests.csproj", "{BD008C7E-9676-4E5A-B8F4-637EC91233F2}"
