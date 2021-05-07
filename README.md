@@ -1,4 +1,4 @@
-Q42.RijksmuseumApi
+Q42.RijksmuseumApi [Archived]
 =========
 
 Open source library for communication with the Rijksmuseum API.
@@ -46,8 +46,6 @@ Q42.RijksmuseumApi is licensed under [MIT](http://www.opensource.org/licenses/mi
 ## Contributions
 
 Contributions are welcome. Fork this repository and send a pull request if you have something useful to add.
-
-[![Build status](https://ci.appveyor.com/api/projects/status/26pw1r6wrxnx8tuq)](https://ci.appveyor.com/project/michielpost/q42-rijksmuseumapi)
 
 ## More info about the Rijksmuseum API
 * [Rijksmuseum API](https://www.rijksmuseum.nl/en/api)
